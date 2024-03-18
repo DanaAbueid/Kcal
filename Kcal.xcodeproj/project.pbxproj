@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A17E12D02BA3CAE4007760B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E12CF2BA3CAE4007760B7 /* AppDelegate.swift */; };
 		A17E12D22BA3CAE4007760B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E12D12BA3CAE4007760B7 /* SceneDelegate.swift */; };
-		A17E12D42BA3CAE4007760B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E12D32BA3CAE4007760B7 /* ViewController.swift */; };
+		A17E12D42BA3CAE4007760B7 /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E12D32BA3CAE4007760B7 /* CustomPageViewController.swift */; };
 		A17E12D72BA3CAE4007760B7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A17E12D62BA3CAE4007760B7 /* Base */; };
 		A17E12DA2BA3CAE4007760B7 /* Kcal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A17E12D82BA3CAE4007760B7 /* Kcal.xcdatamodeld */; };
 		A17E12DC2BA3CAE8007760B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17E12DB2BA3CAE8007760B7 /* Assets.xcassets */; };
@@ -17,6 +17,16 @@
 		A17E12EA2BA3CAE9007760B7 /* KcalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E12E92BA3CAE9007760B7 /* KcalTests.swift */; };
 		A17E12F42BA3CAE9007760B7 /* KcalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E12F32BA3CAE9007760B7 /* KcalUITests.swift */; };
 		A17E12F62BA3CAE9007760B7 /* KcalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E12F52BA3CAE9007760B7 /* KcalUITestsLaunchTests.swift */; };
+		A194452D2BA8B7D3004F7772 /* GettingStartedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194452C2BA8B7D3004F7772 /* GettingStartedController.swift */; };
+		A1AE93E72BA7B53A00ACC2BF /* PageItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE93E62BA7B53A00ACC2BF /* PageItemViewController.swift */; };
+		A1AE93E92BA7B61C00ACC2BF /* PageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE93E82BA7B61C00ACC2BF /* PageContent.swift */; };
+		A1DEC5082BA65F2E0059FDA7 /* Signika-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1DEC5032BA65F2D0059FDA7 /* Signika-SemiBold.ttf */; };
+		A1DEC5092BA65F2E0059FDA7 /* Signika-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1DEC5042BA65F2D0059FDA7 /* Signika-Bold.ttf */; };
+		A1DEC50A2BA65F2E0059FDA7 /* Signika-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1DEC5052BA65F2D0059FDA7 /* Signika-Regular.ttf */; };
+		A1DEC50B2BA65F2E0059FDA7 /* Signika-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1DEC5062BA65F2D0059FDA7 /* Signika-Medium.ttf */; };
+		A1DEC50C2BA65F2E0059FDA7 /* Signika-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1DEC5072BA65F2E0059FDA7 /* Signika-Light.ttf */; };
+		A1DEC50F2BA65FED0059FDA7 /* Signika-VariableFont_GRAD,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1DEC50E2BA65FED0059FDA7 /* Signika-VariableFont_GRAD,wght.ttf */; };
+		A1FF116C2BA67EF0009EF5C4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF116B2BA67EF0009EF5C4 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +50,7 @@
 		A17E12CC2BA3CAE4007760B7 /* Kcal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kcal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17E12CF2BA3CAE4007760B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A17E12D12BA3CAE4007760B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A17E12D32BA3CAE4007760B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A17E12D32BA3CAE4007760B7 /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
 		A17E12D62BA3CAE4007760B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A17E12D92BA3CAE4007760B7 /* Kcal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kcal.xcdatamodel; sourceTree = "<group>"; };
 		A17E12DB2BA3CAE8007760B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +61,16 @@
 		A17E12EF2BA3CAE9007760B7 /* KcalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KcalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17E12F32BA3CAE9007760B7 /* KcalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KcalUITests.swift; sourceTree = "<group>"; };
 		A17E12F52BA3CAE9007760B7 /* KcalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KcalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A194452C2BA8B7D3004F7772 /* GettingStartedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingStartedController.swift; sourceTree = "<group>"; };
+		A1AE93E62BA7B53A00ACC2BF /* PageItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageItemViewController.swift; sourceTree = "<group>"; };
+		A1AE93E82BA7B61C00ACC2BF /* PageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContent.swift; sourceTree = "<group>"; };
+		A1DEC5032BA65F2D0059FDA7 /* Signika-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-SemiBold.ttf"; sourceTree = "<group>"; };
+		A1DEC5042BA65F2D0059FDA7 /* Signika-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Bold.ttf"; sourceTree = "<group>"; };
+		A1DEC5052BA65F2D0059FDA7 /* Signika-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Regular.ttf"; sourceTree = "<group>"; };
+		A1DEC5062BA65F2D0059FDA7 /* Signika-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Medium.ttf"; sourceTree = "<group>"; };
+		A1DEC5072BA65F2E0059FDA7 /* Signika-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Light.ttf"; sourceTree = "<group>"; };
+		A1DEC50E2BA65FED0059FDA7 /* Signika-VariableFont_GRAD,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-VariableFont_GRAD,wght.ttf"; sourceTree = "<group>"; };
+		A1FF116B2BA67EF0009EF5C4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +121,12 @@
 		A17E12CE2BA3CAE4007760B7 /* Kcal */ = {
 			isa = PBXGroup;
 			children = (
+				A1DEC50D2BA65F8B0059FDA7 /* Fonts */,
 				A17E12CF2BA3CAE4007760B7 /* AppDelegate.swift */,
 				A17E12D12BA3CAE4007760B7 /* SceneDelegate.swift */,
-				A17E12D32BA3CAE4007760B7 /* ViewController.swift */,
-				A17E12D52BA3CAE4007760B7 /* Main.storyboard */,
+				A1DEC4FD2BA65DB00059FDA7 /* Controller */,
+				A1DEC4FE2BA65DBE0059FDA7 /* View */,
+				A1FF116D2BA67EF8009EF5C4 /* Model */,
 				A17E12DB2BA3CAE8007760B7 /* Assets.xcassets */,
 				A17E12DD2BA3CAE8007760B7 /* LaunchScreen.storyboard */,
 				A17E12E02BA3CAE8007760B7 /* Info.plist */,
@@ -128,6 +150,46 @@
 				A17E12F52BA3CAE9007760B7 /* KcalUITestsLaunchTests.swift */,
 			);
 			path = KcalUITests;
+			sourceTree = "<group>";
+		};
+		A1DEC4FD2BA65DB00059FDA7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A17E12D32BA3CAE4007760B7 /* CustomPageViewController.swift */,
+				A1AE93E62BA7B53A00ACC2BF /* PageItemViewController.swift */,
+				A194452C2BA8B7D3004F7772 /* GettingStartedController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A1DEC4FE2BA65DBE0059FDA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A17E12D52BA3CAE4007760B7 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1DEC50D2BA65F8B0059FDA7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A1DEC5042BA65F2D0059FDA7 /* Signika-Bold.ttf */,
+				A1DEC5072BA65F2E0059FDA7 /* Signika-Light.ttf */,
+				A1DEC50E2BA65FED0059FDA7 /* Signika-VariableFont_GRAD,wght.ttf */,
+				A1DEC5062BA65F2D0059FDA7 /* Signika-Medium.ttf */,
+				A1DEC5052BA65F2D0059FDA7 /* Signika-Regular.ttf */,
+				A1DEC5032BA65F2D0059FDA7 /* Signika-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A1FF116D2BA67EF8009EF5C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1FF116B2BA67EF0009EF5C4 /* Constant.swift */,
+				A1AE93E82BA7B61C00ACC2BF /* PageContent.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +296,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1DEC50C2BA65F2E0059FDA7 /* Signika-Light.ttf in Resources */,
 				A17E12DC2BA3CAE8007760B7 /* Assets.xcassets in Resources */,
+				A1DEC50B2BA65F2E0059FDA7 /* Signika-Medium.ttf in Resources */,
 				A17E12DF2BA3CAE8007760B7 /* Base in Resources */,
+				A1DEC5082BA65F2E0059FDA7 /* Signika-SemiBold.ttf in Resources */,
+				A1DEC5092BA65F2E0059FDA7 /* Signika-Bold.ttf in Resources */,
+				A1DEC50A2BA65F2E0059FDA7 /* Signika-Regular.ttf in Resources */,
+				A1DEC50F2BA65FED0059FDA7 /* Signika-VariableFont_GRAD,wght.ttf in Resources */,
 				A17E12D72BA3CAE4007760B7 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,8 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AE93E72BA7B53A00ACC2BF /* PageItemViewController.swift in Sources */,
+				A1AE93E92BA7B61C00ACC2BF /* PageContent.swift in Sources */,
 				A17E12DA2BA3CAE4007760B7 /* Kcal.xcdatamodeld in Sources */,
-				A17E12D42BA3CAE4007760B7 /* ViewController.swift in Sources */,
+				A17E12D42BA3CAE4007760B7 /* CustomPageViewController.swift in Sources */,
+				A194452D2BA8B7D3004F7772 /* GettingStartedController.swift in Sources */,
+				A1FF116C2BA67EF0009EF5C4 /* Constant.swift in Sources */,
 				A17E12D02BA3CAE4007760B7 /* AppDelegate.swift in Sources */,
 				A17E12D22BA3CAE4007760B7 /* SceneDelegate.swift in Sources */,
 			);

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gYo-T4-vH7">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Signika-VariableFont_GRAD,wght.ttf">
+            <string>Signika-Light_Regular</string>
+            <string>Signika-Light_SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Getting Started Controller-->
+        <scene sceneID="RnM-3Z-QaK">
+            <objects>
+                <viewController id="gYo-T4-vH7" customClass="GettingStartedController" customModule="Kcal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5S9-eb-VMB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mMO-7l-dcR">
+                                <rect key="frame" x="51.333333333333343" y="90" width="290.33333333333326" height="672"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kcal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="r8z-cz-ZLW">
+                                        <rect key="frame" x="104.66666666666666" y="0.0" width="81" height="53"/>
+                                        <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="43"/>
+                                        <color key="textColor" name="LightGreen"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6Y-tC-eBx">
+                                        <rect key="frame" x="0.0" y="83" width="291" height="381"/>
+                                        <connections>
+                                            <segue destination="WdE-9x-vir" kind="embed" id="FiW-42-ya8"/>
+                                        </connections>
+                                    </containerView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Abe-JY-XaW">
+                                        <rect key="frame" x="87.333333333333314" y="494.33333333333337" width="115.66666666666669" height="25.666666666666629"/>
+                                        <color key="pageIndicatorTintColor" name="LightPink"/>
+                                        <color key="currentPageIndicatorTintColor" name="DarkPink"/>
+                                    </pageControl>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lo-q1-Yld">
+                                        <rect key="frame" x="0.0" y="550" width="290.33333333333331" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="9Ck-kz-onR"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="AO2-xO-weS"/>
+                                        </constraints>
+                                        <color key="tintColor" name="LightGreen"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Get Started">
+                                            <fontDescription key="titleFontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="2fv-gF-Sar">
+                                        <rect key="frame" x="25.333333333333329" y="652" width="239.66666666666669" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Already Have An Account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kiq-S6-FK0">
+                                                <rect key="frame" x="0.0" y="0.0" width="188.33333333333334" height="20"/>
+                                                <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="17"/>
+                                                <color key="textColor" name="LightGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGC-Dv-0Cw">
+                                                <rect key="frame" x="194.33333333333331" y="0.0" width="45.333333333333343" height="20"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                                </accessibility>
+                                                <gestureRecognizers/>
+                                                <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="17"/>
+                                                <color key="textColor" name="LightGreen"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="D6Y-tC-eBx" firstAttribute="leading" secondItem="mMO-7l-dcR" secondAttribute="leading" id="0ro-LH-BQZ"/>
+                                    <constraint firstItem="1Lo-q1-Yld" firstAttribute="leading" secondItem="mMO-7l-dcR" secondAttribute="leadingMargin" id="9ri-90-ixu"/>
+                                    <constraint firstItem="2fv-gF-Sar" firstAttribute="top" secondItem="mMO-7l-dcR" secondAttribute="top" constant="652" id="GqY-tv-rXx"/>
+                                    <constraint firstItem="2fv-gF-Sar" firstAttribute="leading" secondItem="mMO-7l-dcR" secondAttribute="leading" constant="25.333333333333314" id="M4M-IP-XTr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eA5-GN-Lfc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eA5-GN-Lfc" firstAttribute="trailing" secondItem="mMO-7l-dcR" secondAttribute="trailing" constant="51.333333333333371" id="3p8-DR-dax"/>
+                            <constraint firstItem="mMO-7l-dcR" firstAttribute="top" secondItem="eA5-GN-Lfc" secondAttribute="top" constant="31" id="OaD-AU-gm0"/>
+                            <constraint firstItem="mMO-7l-dcR" firstAttribute="centerX" secondItem="5S9-eb-VMB" secondAttribute="centerX" id="l0C-X3-XUC"/>
+                            <constraint firstItem="mMO-7l-dcR" firstAttribute="centerY" secondItem="5S9-eb-VMB" secondAttribute="centerY" id="w6b-2g-zWv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="Abe-JY-XaW" id="sw8-ZA-xjw"/>
+                        <outlet property="sharedButton" destination="1Lo-q1-Yld" id="wok-wx-tcz"/>
+                        <outlet property="sharedLabel" destination="zGC-Dv-0Cw" id="UMS-dn-Uo0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Mq-19-RO2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1892.3664122137404" y="-11.267605633802818"/>
+        </scene>
+        <!--Page Item View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="GettingStartedPage" id="BYZ-38-t0r" customClass="PageItemViewController" customModule="Kcal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fyk-Z1-ttf">
+                                <rect key="frame" x="56" y="224.66666666666663" width="281" height="403"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eTV-rF-Fkl">
+                                        <rect key="frame" x="0.0" y="0.0" width="281" height="403"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diet-cuate" translatesAutoresizingMaskIntoConstraints="NO" id="7oZ-p1-5k3">
+                                                <rect key="frame" x="0.0" y="0.0" width="281" height="282"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="281.10000000000002" id="b7Y-NW-8nx"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="282" id="idV-v9-2jL"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eat Healthy" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLu-N4-2Hx">
+                                                <rect key="frame" x="78" y="287" width="125.33333333333331" height="31"/>
+                                                <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maintaining good health should be the primary focus of everyone." textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkJ-0d-xed">
+                                                <rect key="frame" x="13.333333333333329" y="323" width="254.66666666666669" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="KuM-dk-FcM"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="275" id="xwh-1X-xDa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fyk-Z1-ttf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7lo-dA-3b3"/>
+                            <constraint firstItem="fyk-Z1-ttf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="A5X-vJ-J4Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageImage" destination="7oZ-p1-5k3" id="FDt-JJ-VrM"/>
+                        <outlet property="pageText" destination="CkJ-0d-xed" id="u1j-Go-24x"/>
+                        <outlet property="pageTitle" destination="hLu-N4-2Hx" id="b4i-7Y-RPp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1892" y="-665"/>
+        </scene>
+        <!--Custom Page View Controller-->
+        <scene sceneID="xhn-QS-czW">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="WdE-9x-vir" customClass="CustomPageViewController" customModule="Kcal" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5sr-oi-2ht" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1152" y="-11"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Diet-cuate" width="500" height="500"/>
+        <namedColor name="DarkPink">
+            <color red="1" green="0.51800000667572021" blue="0.45100000500679016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGray">
+            <color red="0.48600000143051147" green="0.48600000143051147" blue="0.48600000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGreen">
+            <color red="0.5690000057220459" green="0.77999997138977051" blue="0.53299999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightPink">
+            <color red="1" green="0.75300002098083496" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
