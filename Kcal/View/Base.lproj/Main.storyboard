@@ -23,80 +23,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mMO-7l-dcR">
-                                <rect key="frame" x="51.333333333333343" y="90" width="290.33333333333326" height="672"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5W-mG-YWo">
+                                <rect key="frame" x="31.333333333333343" y="70" width="330.33333333333326" height="712"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kcal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="r8z-cz-ZLW">
-                                        <rect key="frame" x="104.66666666666666" y="0.0" width="81" height="53"/>
-                                        <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="43"/>
-                                        <color key="textColor" name="LightGreen"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6Y-tC-eBx">
-                                        <rect key="frame" x="0.0" y="83" width="291" height="381"/>
-                                        <connections>
-                                            <segue destination="WdE-9x-vir" kind="embed" id="FiW-42-ya8"/>
-                                        </connections>
-                                    </containerView>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Abe-JY-XaW">
-                                        <rect key="frame" x="87.333333333333314" y="494.33333333333337" width="115.66666666666669" height="25.666666666666629"/>
-                                        <color key="pageIndicatorTintColor" name="LightPink"/>
-                                        <color key="currentPageIndicatorTintColor" name="DarkPink"/>
-                                    </pageControl>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lo-q1-Yld">
-                                        <rect key="frame" x="0.0" y="550" width="290.33333333333331" height="72"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="72" id="9Ck-kz-onR"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="AO2-xO-weS"/>
-                                        </constraints>
-                                        <color key="tintColor" name="LightGreen"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Get Started">
-                                            <fontDescription key="titleFontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="25"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="24"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="2fv-gF-Sar">
-                                        <rect key="frame" x="25.333333333333329" y="652" width="239.66666666666669" height="20"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mMO-7l-dcR">
+                                        <rect key="frame" x="11.333333333333343" y="20" width="308" height="672"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Already Have An Account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kiq-S6-FK0">
-                                                <rect key="frame" x="0.0" y="0.0" width="188.33333333333334" height="20"/>
-                                                <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="17"/>
-                                                <color key="textColor" name="LightGray"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGC-Dv-0Cw">
-                                                <rect key="frame" x="194.33333333333331" y="0.0" width="45.333333333333343" height="20"/>
-                                                <accessibility key="accessibilityConfiguration">
-                                                    <accessibilityTraits key="traits" button="YES" staticText="YES"/>
-                                                </accessibility>
-                                                <gestureRecognizers/>
-                                                <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kcal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="r8z-cz-ZLW">
+                                                <rect key="frame" x="113.33333333333334" y="0.0" width="81" height="53"/>
+                                                <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="43"/>
                                                 <color key="textColor" name="LightGreen"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6Y-tC-eBx">
+                                                <rect key="frame" x="0.0" y="82.999999999999972" width="308" height="381.33333333333326"/>
+                                                <connections>
+                                                    <segue destination="WdE-9x-vir" kind="embed" id="FiW-42-ya8"/>
+                                                </connections>
+                                            </containerView>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Abe-JY-XaW">
+                                                <rect key="frame" x="96" y="494.33333333333337" width="115.66666666666669" height="25.666666666666629"/>
+                                                <color key="pageIndicatorTintColor" name="LightPink"/>
+                                                <color key="currentPageIndicatorTintColor" name="DarkPink"/>
+                                            </pageControl>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lo-q1-Yld">
+                                                <rect key="frame" x="0.0" y="550" width="308" height="72"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="72" id="9Ck-kz-onR"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="AO2-xO-weS"/>
+                                                </constraints>
+                                                <color key="tintColor" name="LightGreen"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Get Started">
+                                                    <fontDescription key="titleFontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="25"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="24"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="NHy-vd-Zro" kind="show" identifier="GoToSignUp" id="dsx-Ey-lm6"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="2fv-gF-Sar">
+                                                <rect key="frame" x="25.333333333333343" y="652" width="257.33333333333326" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Already Have An Account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kiq-S6-FK0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="188.33333333333334" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="17"/>
+                                                        <color key="textColor" name="LightGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGC-Dv-0Cw">
+                                                        <rect key="frame" x="194.33333333333331" y="0.0" width="63" height="20"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                                        </accessibility>
+                                                        <gestureRecognizers/>
+                                                        <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="17"/>
+                                                        <color key="textColor" name="LightGreen"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="D6Y-tC-eBx" firstAttribute="leading" secondItem="mMO-7l-dcR" secondAttribute="leading" id="0ro-LH-BQZ"/>
+                                            <constraint firstItem="1Lo-q1-Yld" firstAttribute="leading" secondItem="mMO-7l-dcR" secondAttribute="leadingMargin" id="9ri-90-ixu"/>
+                                            <constraint firstItem="2fv-gF-Sar" firstAttribute="top" secondItem="mMO-7l-dcR" secondAttribute="top" constant="652" id="GqY-tv-rXx"/>
+                                            <constraint firstItem="2fv-gF-Sar" firstAttribute="leading" secondItem="mMO-7l-dcR" secondAttribute="leading" constant="25.333333333333314" id="M4M-IP-XTr"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="D6Y-tC-eBx" firstAttribute="leading" secondItem="mMO-7l-dcR" secondAttribute="leading" id="0ro-LH-BQZ"/>
-                                    <constraint firstItem="1Lo-q1-Yld" firstAttribute="leading" secondItem="mMO-7l-dcR" secondAttribute="leadingMargin" id="9ri-90-ixu"/>
-                                    <constraint firstItem="2fv-gF-Sar" firstAttribute="top" secondItem="mMO-7l-dcR" secondAttribute="top" constant="652" id="GqY-tv-rXx"/>
-                                    <constraint firstItem="2fv-gF-Sar" firstAttribute="leading" secondItem="mMO-7l-dcR" secondAttribute="leading" constant="25.333333333333314" id="M4M-IP-XTr"/>
+                                    <constraint firstItem="mMO-7l-dcR" firstAttribute="centerX" secondItem="M5W-mG-YWo" secondAttribute="centerX" id="JEX-wS-s51"/>
+                                    <constraint firstItem="mMO-7l-dcR" firstAttribute="centerY" secondItem="M5W-mG-YWo" secondAttribute="centerY" id="K7B-A2-H9T"/>
+                                    <constraint firstAttribute="bottom" secondItem="mMO-7l-dcR" secondAttribute="bottom" constant="18.666666666666629" id="MSA-o0-ibd"/>
+                                    <constraint firstItem="mMO-7l-dcR" firstAttribute="top" secondItem="pVg-Fv-45U" secondAttribute="top" constant="20" id="Z4q-Ep-mBz"/>
+                                    <constraint firstAttribute="trailing" secondItem="mMO-7l-dcR" secondAttribute="trailing" constant="19.666666666666572" id="cjk-Xb-Ysf"/>
                                 </constraints>
-                            </stackView>
+                                <viewLayoutGuide key="contentLayoutGuide" id="0J4-3c-Wen"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="pVg-Fv-45U"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eA5-GN-Lfc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eA5-GN-Lfc" firstAttribute="trailing" secondItem="mMO-7l-dcR" secondAttribute="trailing" constant="51.333333333333371" id="3p8-DR-dax"/>
-                            <constraint firstItem="mMO-7l-dcR" firstAttribute="top" secondItem="eA5-GN-Lfc" secondAttribute="top" constant="31" id="OaD-AU-gm0"/>
-                            <constraint firstItem="mMO-7l-dcR" firstAttribute="centerX" secondItem="5S9-eb-VMB" secondAttribute="centerX" id="l0C-X3-XUC"/>
-                            <constraint firstItem="mMO-7l-dcR" firstAttribute="centerY" secondItem="5S9-eb-VMB" secondAttribute="centerY" id="w6b-2g-zWv"/>
+                            <constraint firstItem="M5W-mG-YWo" firstAttribute="top" secondItem="eA5-GN-Lfc" secondAttribute="top" constant="11" id="3RA-u9-o3b"/>
+                            <constraint firstItem="M5W-mG-YWo" firstAttribute="leading" secondItem="eA5-GN-Lfc" secondAttribute="leading" constant="31.333333333333343" id="fcm-j3-XVA"/>
+                            <constraint firstItem="M5W-mG-YWo" firstAttribute="centerX" secondItem="5S9-eb-VMB" secondAttribute="centerX" id="k8Q-xW-Dzv"/>
+                            <constraint firstItem="M5W-mG-YWo" firstAttribute="centerY" secondItem="5S9-eb-VMB" secondAttribute="centerY" id="teg-aX-M6Z"/>
                         </constraints>
                     </view>
                     <connections>
@@ -109,38 +126,233 @@
             </objects>
             <point key="canvasLocation" x="-1892.3664122137404" y="-11.267605633802818"/>
         </scene>
-        <!--Page Item View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller-->
+        <scene sceneID="GoO-V0-9FW">
             <objects>
-                <viewController storyboardIdentifier="GettingStartedPage" id="BYZ-38-t0r" customClass="PageItemViewController" customModule="Kcal" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="NHy-vd-Zro" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zEX-Jd-9cU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="6bu-FT-bpl">
+                                <rect key="frame" x="0.0" y="59.999999999999972" width="393" height="510.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Kcal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="ein-53-SRk">
+                                        <rect key="frame" x="156" y="0.0" width="81" height="53"/>
+                                        <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="43"/>
+                                        <color key="textColor" name="LightGreen"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Sign Up Now To Find, track and eat heathy food!" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEM-PM-3u9">
+                                        <rect key="frame" x="15" y="93.000000000000014" width="363" height="142.33333333333337"/>
+                                        <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="24"/>
+                                        <color key="textColor" name="DarkPink"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TAP-yF-Q7s">
+                                        <rect key="frame" x="46.666666666666657" y="275.33333333333331" width="300" height="235"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" minimumFontSize="17" background="textFieldGreen" disabledBackground="textFieldGreen" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bBq-mN-Cj6" customClass="PaddedTextField" customModule="Kcal" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="IA6-OR-SLD"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="y4y-MG-SbS"/>
+                                                </constraints>
+                                                <color key="textColor" name="DarkPink"/>
+                                                <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" returnKeyType="next" smartDashesType="no" textContentType="name"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" background="textFieldGreen" disabledBackground="textFieldGreen" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="H8M-ac-Bu6" customClass="PaddedTextField" customModule="Kcal" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="85" width="300" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="YXy-ZQ-7Nq"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Z0s-9j-gRO"/>
+                                                </constraints>
+                                                <color key="textColor" name="DarkPink"/>
+                                                <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" textContentType="email"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="textFieldGreen" disabledBackground="textFieldGreen" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jWk-Mo-J7B" customClass="PaddedTextField" customModule="Kcal" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="170" width="300" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="Qdp-wX-eQc"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="fL0-wV-cOr"/>
+                                                </constraints>
+                                                <color key="textColor" name="DarkPink"/>
+                                                <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" returnKeyType="next" secureTextEntry="YES" smartDashesType="no" textContentType="name"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVb-F5-GjS">
+                                <rect key="frame" x="51" y="610.33333333333337" width="291" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="Olm-Ix-e5a"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="mQ6-eD-azC"/>
+                                </constraints>
+                                <color key="tintColor" name="LightGreen"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign Up">
+                                    <fontDescription key="titleFontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="25"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="6aC-yb-zav">
+                                <rect key="frame" x="77.000000000000014" y="712.33333333333337" width="239.33333333333337" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Already Have An Account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ8-mj-1jB">
+                                        <rect key="frame" x="0.0" y="0.0" width="188.33333333333334" height="21"/>
+                                        <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="17"/>
+                                        <color key="textColor" name="LightGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqL-TE-WQm">
+                                        <rect key="frame" x="194.33333333333331" y="0.0" width="45" height="21"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                        </accessibility>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="17"/>
+                                        <color key="textColor" name="LightGreen"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LM8-Km-kJP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LM8-Km-kJP" firstAttribute="bottom" secondItem="6aC-yb-zav" secondAttribute="bottom" constant="108.67" id="A2M-ZB-AUh"/>
+                            <constraint firstItem="tVb-F5-GjS" firstAttribute="top" secondItem="6bu-FT-bpl" secondAttribute="bottom" constant="40" id="Cj4-q0-YQc"/>
+                            <constraint firstItem="6aC-yb-zav" firstAttribute="top" secondItem="tVb-F5-GjS" secondAttribute="bottom" constant="30" id="JnR-Ks-omM"/>
+                            <constraint firstItem="6bu-FT-bpl" firstAttribute="leading" secondItem="LM8-Km-kJP" secondAttribute="leading" id="KF9-E9-a60"/>
+                            <constraint firstItem="LM8-Km-kJP" firstAttribute="trailing" secondItem="6aC-yb-zav" secondAttribute="trailing" constant="76.670000000000002" id="QOy-Je-Cqs"/>
+                            <constraint firstItem="6bu-FT-bpl" firstAttribute="trailing" secondItem="LM8-Km-kJP" secondAttribute="trailing" id="dhS-28-Vc5"/>
+                            <constraint firstItem="tVb-F5-GjS" firstAttribute="leading" secondItem="LM8-Km-kJP" secondAttribute="leading" constant="51" id="h5R-5J-Oxi"/>
+                            <constraint firstItem="6bu-FT-bpl" firstAttribute="top" secondItem="LM8-Km-kJP" secondAttribute="top" constant="60" id="jw8-gm-T5z"/>
+                            <constraint firstItem="LM8-Km-kJP" firstAttribute="trailing" secondItem="tVb-F5-GjS" secondAttribute="trailing" constant="51" id="rDU-93-D12"/>
+                            <constraint firstItem="6aC-yb-zav" firstAttribute="leading" secondItem="LM8-Km-kJP" secondAttribute="leading" constant="77" id="tvj-XM-Qu1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bkr-Bl-R9G"/>
+                    <connections>
+                        <segue destination="OqS-l9-lYg" kind="presentation" identifier="GoToWelcome" id="wPL-sz-2dU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QST-vh-6uN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1972" y="-713"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mWc-yI-hd9">
+            <objects>
+                <viewController id="OqS-l9-lYg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tuV-6U-y6a">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="gOu-0P-6p7">
+                                <rect key="frame" x="10" y="71" width="383" height="557"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Kcal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Pn3-vq-KZI">
+                                        <rect key="frame" x="151" y="0.0" width="81" height="53"/>
+                                        <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="43"/>
+                                        <color key="textColor" name="LightGreen"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image post-bro" translatesAutoresizingMaskIntoConstraints="NO" id="cx4-xS-rvV">
+                                        <rect key="frame" x="41.666666666666657" y="78" width="300" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="hoe-a5-ObJ"/>
+                                            <constraint firstAttribute="width" constant="300" id="zLu-En-kml"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome You Can Now Log In and Enjoy Our App Features!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGX-qJ-4Fh">
+                                        <rect key="frame" x="23.666666666666657" y="403" width="335.66666666666674" height="57"/>
+                                        <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="23"/>
+                                        <color key="textColor" name="DarkPink"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L7-lA-Ncd">
+                                        <rect key="frame" x="46.666666666666657" y="485" width="290" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="gly-bM-m0m"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="oYz-Ty-HmA"/>
+                                        </constraints>
+                                        <color key="tintColor" name="LightGreen"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Log In">
+                                            <fontDescription key="titleFontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Itr-l3-Slj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gOu-0P-6p7" firstAttribute="leading" secondItem="Itr-l3-Slj" secondAttribute="leading" constant="10" id="Qy6-zt-Xyq"/>
+                            <constraint firstItem="gOu-0P-6p7" firstAttribute="top" secondItem="Itr-l3-Slj" secondAttribute="top" constant="71" id="bQu-9J-0zw"/>
+                            <constraint firstAttribute="trailing" secondItem="gOu-0P-6p7" secondAttribute="trailing" id="ii1-Gy-0PY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pt2-Fj-b4d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FI0-PH-dxF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1095" y="-713"/>
+        </scene>
+        <!--Custom Page View Controller-->
+        <scene sceneID="xhn-QS-czW">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="WdE-9x-vir" customClass="CustomPageViewController" customModule="Kcal" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5sr-oi-2ht" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1892" y="522"/>
+        </scene>
+        <!--Page Item View Controller-->
+        <scene sceneID="uak-Bk-mjm">
+            <objects>
+                <viewController storyboardIdentifier="GettingStartedPage" id="jdH-vC-odH" customClass="PageItemViewController" customModule="Kcal" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LAe-Bx-HPv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fyk-Z1-ttf">
-                                <rect key="frame" x="56" y="224.66666666666663" width="281" height="403"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="I7c-fa-cEV">
+                                <rect key="frame" x="56" y="225.33333333333334" width="281" height="401.33333333333326"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eTV-rF-Fkl">
-                                        <rect key="frame" x="0.0" y="0.0" width="281" height="403"/>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SRE-d7-kP2">
+                                        <rect key="frame" x="0.0" y="0.0" width="281" height="401.33333333333331"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diet-cuate" translatesAutoresizingMaskIntoConstraints="NO" id="7oZ-p1-5k3">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diet-cuate" translatesAutoresizingMaskIntoConstraints="NO" id="0ha-nV-A3g">
                                                 <rect key="frame" x="0.0" y="0.0" width="281" height="282"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="281.10000000000002" id="b7Y-NW-8nx"/>
-                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="282" id="idV-v9-2jL"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="282" id="Gbu-TK-X0x"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="281.10000000000002" id="u6y-IR-xZB"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eat Healthy" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLu-N4-2Hx">
-                                                <rect key="frame" x="78" y="287" width="125.33333333333331" height="31"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eat Healthy" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJM-Gn-y1u">
+                                                <rect key="frame" x="76.333333333333329" y="287" width="128.33333333333337" height="29.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maintaining good health should be the primary focus of everyone." textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkJ-0d-xed">
-                                                <rect key="frame" x="13.333333333333329" y="323" width="254.66666666666669" height="80"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maintaining good health should be the primary focus of everyone." textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyg-Ch-1sy">
+                                                <rect key="frame" x="6.6666666666666572" y="321.33333333333326" width="267.66666666666674" height="80"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="KuM-dk-FcM"/>
-                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="275" id="xwh-1X-xDa"/>
+                                                    <constraint firstAttribute="height" constant="80" id="lVG-WL-P9E"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="275" id="yGA-eX-vDl"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -151,34 +363,29 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="HqG-l9-4bA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fyk-Z1-ttf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7lo-dA-3b3"/>
-                            <constraint firstItem="fyk-Z1-ttf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="A5X-vJ-J4Q"/>
+                            <constraint firstItem="I7c-fa-cEV" firstAttribute="centerX" secondItem="LAe-Bx-HPv" secondAttribute="centerX" id="F4m-r7-8Xz"/>
+                            <constraint firstItem="I7c-fa-cEV" firstAttribute="centerY" secondItem="LAe-Bx-HPv" secondAttribute="centerY" id="rqi-Sz-2ad"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="pageImage" destination="7oZ-p1-5k3" id="FDt-JJ-VrM"/>
-                        <outlet property="pageText" destination="CkJ-0d-xed" id="u1j-Go-24x"/>
-                        <outlet property="pageTitle" destination="hLu-N4-2Hx" id="b4i-7Y-RPp"/>
+                        <outlet property="pageImage" destination="0ha-nV-A3g" id="w9F-Z0-Xeo"/>
+                        <outlet property="pageText" destination="Lyg-Ch-1sy" id="RHJ-JJ-PX2"/>
+                        <outlet property="pageTitle" destination="iJM-Gn-y1u" id="s92-kr-wOe"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IoS-5Q-6Iv" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1892" y="-665"/>
-        </scene>
-        <!--Custom Page View Controller-->
-        <scene sceneID="xhn-QS-czW">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="WdE-9x-vir" customClass="CustomPageViewController" customModule="Kcal" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5sr-oi-2ht" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1152" y="-11"/>
+            <point key="canvasLocation" x="-2566" y="-11"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="LightGreen"/>
     <resources>
         <image name="Diet-cuate" width="500" height="500"/>
+        <image name="Image post-bro" width="500" height="500"/>
+        <image name="textFieldGreen" width="420" height="108"/>
         <namedColor name="DarkPink">
             <color red="1" green="0.51800000667572021" blue="0.45100000500679016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

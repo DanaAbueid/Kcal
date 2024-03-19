@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A176207B2BA8DA3400A3A177 /* RoundedSquare.xib in Resources */ = {isa = PBXBuildFile; fileRef = A176207A2BA8DA3400A3A177 /* RoundedSquare.xib */; };
 		A17E12D02BA3CAE4007760B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E12CF2BA3CAE4007760B7 /* AppDelegate.swift */; };
 		A17E12D22BA3CAE4007760B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E12D12BA3CAE4007760B7 /* SceneDelegate.swift */; };
 		A17E12D42BA3CAE4007760B7 /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E12D32BA3CAE4007760B7 /* CustomPageViewController.swift */; };
@@ -20,6 +21,7 @@
 		A194452D2BA8B7D3004F7772 /* GettingStartedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194452C2BA8B7D3004F7772 /* GettingStartedController.swift */; };
 		A1AE93E72BA7B53A00ACC2BF /* PageItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE93E62BA7B53A00ACC2BF /* PageItemViewController.swift */; };
 		A1AE93E92BA7B61C00ACC2BF /* PageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE93E82BA7B61C00ACC2BF /* PageContent.swift */; };
+		A1DDD7752BA8F34A0036BE26 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DDD7742BA8F34A0036BE26 /* PaddedTextField.swift */; };
 		A1DEC5082BA65F2E0059FDA7 /* Signika-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1DEC5032BA65F2D0059FDA7 /* Signika-SemiBold.ttf */; };
 		A1DEC5092BA65F2E0059FDA7 /* Signika-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1DEC5042BA65F2D0059FDA7 /* Signika-Bold.ttf */; };
 		A1DEC50A2BA65F2E0059FDA7 /* Signika-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1DEC5052BA65F2D0059FDA7 /* Signika-Regular.ttf */; };
@@ -47,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A176207A2BA8DA3400A3A177 /* RoundedSquare.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedSquare.xib; sourceTree = "<group>"; };
 		A17E12CC2BA3CAE4007760B7 /* Kcal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kcal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17E12CF2BA3CAE4007760B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A17E12D12BA3CAE4007760B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		A194452C2BA8B7D3004F7772 /* GettingStartedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingStartedController.swift; sourceTree = "<group>"; };
 		A1AE93E62BA7B53A00ACC2BF /* PageItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageItemViewController.swift; sourceTree = "<group>"; };
 		A1AE93E82BA7B61C00ACC2BF /* PageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContent.swift; sourceTree = "<group>"; };
+		A1DDD7742BA8F34A0036BE26 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
 		A1DEC5032BA65F2D0059FDA7 /* Signika-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-SemiBold.ttf"; sourceTree = "<group>"; };
 		A1DEC5042BA65F2D0059FDA7 /* Signika-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Bold.ttf"; sourceTree = "<group>"; };
 		A1DEC5052BA65F2D0059FDA7 /* Signika-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Regular.ttf"; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				A17E12D52BA3CAE4007760B7 /* Main.storyboard */,
+				A176207A2BA8DA3400A3A177 /* RoundedSquare.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			children = (
 				A1FF116B2BA67EF0009EF5C4 /* Constant.swift */,
 				A1AE93E82BA7B61C00ACC2BF /* PageContent.swift */,
+				A1DDD7742BA8F34A0036BE26 /* PaddedTextField.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,6 +304,7 @@
 			files = (
 				A1DEC50C2BA65F2E0059FDA7 /* Signika-Light.ttf in Resources */,
 				A17E12DC2BA3CAE8007760B7 /* Assets.xcassets in Resources */,
+				A176207B2BA8DA3400A3A177 /* RoundedSquare.xib in Resources */,
 				A1DEC50B2BA65F2E0059FDA7 /* Signika-Medium.ttf in Resources */,
 				A17E12DF2BA3CAE8007760B7 /* Base in Resources */,
 				A1DEC5082BA65F2E0059FDA7 /* Signika-SemiBold.ttf in Resources */,
@@ -330,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1AE93E72BA7B53A00ACC2BF /* PageItemViewController.swift in Sources */,
+				A1DDD7752BA8F34A0036BE26 /* PaddedTextField.swift in Sources */,
 				A1AE93E92BA7B61C00ACC2BF /* PageContent.swift in Sources */,
 				A17E12DA2BA3CAE4007760B7 /* Kcal.xcdatamodeld in Sources */,
 				A17E12D42BA3CAE4007760B7 /* CustomPageViewController.swift in Sources */,
