@@ -16,13 +16,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="132" y="-12"/>
-        </view>
         <viewController id="Igm-a0-5kb" customClass="WelcomeController" customModule="Kcal" customModuleProvider="target">
             <view key="view" contentMode="scaleToFill" id="3qk-qg-o2o">
                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -84,6 +77,13 @@
             <navigationItem key="navigationItem" id="2sH-di-7BM"/>
             <point key="canvasLocation" x="-3543" y="-764"/>
         </viewController>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <point key="canvasLocation" x="132" y="-12"/>
+        </view>
     </objects>
     <resources>
         <image name="Image post-bro" width="500" height="500"/>

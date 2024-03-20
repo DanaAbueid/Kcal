@@ -22,7 +22,6 @@
 		A1AE93E72BA7B53A00ACC2BF /* PageItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE93E62BA7B53A00ACC2BF /* PageItemViewController.swift */; };
 		A1AE93E92BA7B61C00ACC2BF /* PageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE93E82BA7B61C00ACC2BF /* PageContent.swift */; };
 		A1BF5EF82BAA122F003BE05A /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF5EF72BAA122F003BE05A /* SignUpController.swift */; };
-		A1BF5EFA2BAA124D003BE05A /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF5EF92BAA124D003BE05A /* WelcomeController.swift */; };
 		A1BF5EFC2BAA5278003BE05A /* WelcomeScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BF5EFB2BAA5278003BE05A /* WelcomeScreen.xib */; };
 		A1DDD7752BA8F34A0036BE26 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DDD7742BA8F34A0036BE26 /* PaddedTextField.swift */; };
 		A1DEC5082BA65F2E0059FDA7 /* Signika-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1DEC5032BA65F2D0059FDA7 /* Signika-SemiBold.ttf */; };
@@ -71,7 +70,6 @@
 		A1AE93E62BA7B53A00ACC2BF /* PageItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageItemViewController.swift; sourceTree = "<group>"; };
 		A1AE93E82BA7B61C00ACC2BF /* PageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContent.swift; sourceTree = "<group>"; };
 		A1BF5EF72BAA122F003BE05A /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
-		A1BF5EF92BAA124D003BE05A /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
 		A1BF5EFB2BAA5278003BE05A /* WelcomeScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeScreen.xib; sourceTree = "<group>"; };
 		A1DDD7742BA8F34A0036BE26 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
 		A1DEC5032BA65F2D0059FDA7 /* Signika-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 				A1AE93E62BA7B53A00ACC2BF /* PageItemViewController.swift */,
 				A194452C2BA8B7D3004F7772 /* GettingStartedController.swift */,
 				A1BF5EF72BAA122F003BE05A /* SignUpController.swift */,
-				A1BF5EF92BAA124D003BE05A /* WelcomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -351,7 +348,6 @@
 				A1AE93E92BA7B61C00ACC2BF /* PageContent.swift in Sources */,
 				A17E12DA2BA3CAE4007760B7 /* Kcal.xcdatamodeld in Sources */,
 				A17E12D42BA3CAE4007760B7 /* CustomPageViewController.swift in Sources */,
-				A1BF5EFA2BAA124D003BE05A /* WelcomeController.swift in Sources */,
 				A1BF5EF82BAA122F003BE05A /* SignUpController.swift in Sources */,
 				A194452D2BA8B7D3004F7772 /* GettingStartedController.swift in Sources */,
 				A1FF116C2BA67EF0009EF5C4 /* Constant.swift in Sources */,
