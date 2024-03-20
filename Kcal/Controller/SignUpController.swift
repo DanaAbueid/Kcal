@@ -18,14 +18,18 @@ class SignUpController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
+        
         if let backgroundImage = UIImage(named: "textFieldPink") {
             NameTextField.setBackground(image: backgroundImage)
             EmailTextField.setBackground(image: backgroundImage)
             PasswordTextField.setBackground(image: backgroundImage)
-         }    }
+        }
+        
+    }
     
-
+    @IBAction func LogInPressed(_ sender: UIButton) {
+    }
+    
     @IBAction func signUpPressed(_ sender: Any) {
         performSegue(withIdentifier: "GoToWelcome", sender: self)
     }

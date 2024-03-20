@@ -17,3 +17,20 @@ struct Constant {
     let WhiteYellow: String = "WhiteYellow"
     
 }
+
+struct Square {
+    let image: String
+    let label: String
+    let backgroundColor: String
+    let FontColor: String
+    
+
+}
+
+struct Articles {
+    let image: String
+    let label: String
+    let backgroundColor: String
+    let ButtonColor: String
+
+}

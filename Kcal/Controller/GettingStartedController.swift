@@ -27,6 +27,9 @@ class GettingStartedController: UIViewController, CustomPageViewControllerDelega
         }
     }
 
+    @IBAction func LogInPressed(_ sender: UIButton) {
+
+    }
     
     func didUpdatePageIndex(currentIndex: Int) {
         pageControl.currentPage = currentIndex

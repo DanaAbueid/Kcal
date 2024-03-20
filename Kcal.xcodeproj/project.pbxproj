@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A14F74432BAB59CE00B629B4 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F74422BAB59CE00B629B4 /* LogInController.swift */; };
+		A14F74472BAB87BF00B629B4 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F74462BAB87BF00B629B4 /* CustomCollectionViewCell.swift */; };
+		A14F74492BAB882A00B629B4 /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F74482BAB882A00B629B4 /* HomePageController.swift */; };
+		A14F744E2BAB9B8300B629B4 /* ArticlesItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F744C2BAB9B8300B629B4 /* ArticlesItemsController.swift */; };
+		A14F744F2BAB9B8300B629B4 /* ArticlesItemsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14F744D2BAB9B8300B629B4 /* ArticlesItemsController.xib */; };
 		A176207B2BA8DA3400A3A177 /* RoundedSquare.xib in Resources */ = {isa = PBXBuildFile; fileRef = A176207A2BA8DA3400A3A177 /* RoundedSquare.xib */; };
 		A17E12D02BA3CAE4007760B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E12CF2BA3CAE4007760B7 /* AppDelegate.swift */; };
 		A17E12D22BA3CAE4007760B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E12D12BA3CAE4007760B7 /* SceneDelegate.swift */; };
@@ -51,6 +56,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A14F74422BAB59CE00B629B4 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
+		A14F74462BAB87BF00B629B4 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		A14F74482BAB882A00B629B4 /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
+		A14F744C2BAB9B8300B629B4 /* ArticlesItemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesItemsController.swift; sourceTree = "<group>"; };
+		A14F744D2BAB9B8300B629B4 /* ArticlesItemsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesItemsController.xib; sourceTree = "<group>"; };
 		A176207A2BA8DA3400A3A177 /* RoundedSquare.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedSquare.xib; sourceTree = "<group>"; };
 		A17E12CC2BA3CAE4007760B7 /* Kcal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kcal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17E12CF2BA3CAE4007760B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +177,10 @@
 				A1AE93E62BA7B53A00ACC2BF /* PageItemViewController.swift */,
 				A194452C2BA8B7D3004F7772 /* GettingStartedController.swift */,
 				A1BF5EF72BAA122F003BE05A /* SignUpController.swift */,
+				A14F74422BAB59CE00B629B4 /* LogInController.swift */,
+				A14F74462BAB87BF00B629B4 /* CustomCollectionViewCell.swift */,
+				A14F74482BAB882A00B629B4 /* HomePageController.swift */,
+				A14F744C2BAB9B8300B629B4 /* ArticlesItemsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +188,7 @@
 		A1DEC4FE2BA65DBE0059FDA7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A14F744D2BAB9B8300B629B4 /* ArticlesItemsController.xib */,
 				A17E12D52BA3CAE4007760B7 /* Main.storyboard */,
 				A176207A2BA8DA3400A3A177 /* RoundedSquare.xib */,
 				A1BF5EFB2BAA5278003BE05A /* WelcomeScreen.xib */,
@@ -309,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1DEC50C2BA65F2E0059FDA7 /* Signika-Light.ttf in Resources */,
+				A14F744F2BAB9B8300B629B4 /* ArticlesItemsController.xib in Resources */,
 				A17E12DC2BA3CAE8007760B7 /* Assets.xcassets in Resources */,
 				A176207B2BA8DA3400A3A177 /* RoundedSquare.xib in Resources */,
 				A1DEC50B2BA65F2E0059FDA7 /* Signika-Medium.ttf in Resources */,
@@ -346,12 +362,16 @@
 				A1AE93E72BA7B53A00ACC2BF /* PageItemViewController.swift in Sources */,
 				A1DDD7752BA8F34A0036BE26 /* PaddedTextField.swift in Sources */,
 				A1AE93E92BA7B61C00ACC2BF /* PageContent.swift in Sources */,
+				A14F74472BAB87BF00B629B4 /* CustomCollectionViewCell.swift in Sources */,
 				A17E12DA2BA3CAE4007760B7 /* Kcal.xcdatamodeld in Sources */,
+				A14F744E2BAB9B8300B629B4 /* ArticlesItemsController.swift in Sources */,
 				A17E12D42BA3CAE4007760B7 /* CustomPageViewController.swift in Sources */,
 				A1BF5EF82BAA122F003BE05A /* SignUpController.swift in Sources */,
 				A194452D2BA8B7D3004F7772 /* GettingStartedController.swift in Sources */,
+				A14F74492BAB882A00B629B4 /* HomePageController.swift in Sources */,
 				A1FF116C2BA67EF0009EF5C4 /* Constant.swift in Sources */,
 				A17E12D02BA3CAE4007760B7 /* AppDelegate.swift in Sources */,
+				A14F74432BAB59CE00B629B4 /* LogInController.swift in Sources */,
 				A17E12D22BA3CAE4007760B7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
