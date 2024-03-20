@@ -16,6 +16,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArticlesItemsController" customModule="Kcal" customModuleProvider="target">
             <connections>
+                <outlet property="actionButton" destination="3et-vK-uhK" id="TMN-cN-Sua"/>
+                <outlet property="imageView" destination="RYm-ai-BOx" id="fWt-Ah-fIl"/>
+                <outlet property="titleLabel" destination="HEo-C7-D1t" id="BpK-dH-dOS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

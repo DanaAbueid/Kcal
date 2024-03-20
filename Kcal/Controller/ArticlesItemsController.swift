@@ -8,22 +8,27 @@
 import UIKit
 
 class ArticlesItemsController: UIViewController {
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var actionButton: UIButton!
+
+    var imageName: String?
+    var titleText: String?
+    var backgroundColor: String?
+    var buttonColor: String?
+    var pageIndex: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUI()
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupUI() {
+        imageView.image = UIImage(named: imageName ?? "")
+        titleLabel.text = titleText
+        view.backgroundColor = UIColor(named: backgroundColor ?? "")
+        actionButton.backgroundColor = UIColor(named: buttonColor ?? "")
+        view.layer.cornerRadius = 32
+           view.clipsToBounds = true
     }
-    */
-
 }

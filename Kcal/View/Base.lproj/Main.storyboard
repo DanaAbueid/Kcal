@@ -201,6 +201,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="signUpPressed:" destination="NHy-vd-Zro" eventType="touchUpInside" id="9GZ-DF-q1j"/>
+                                            <segue destination="2yh-rY-V7y" kind="showDetail" id="s05-0w-Pt2"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="6aC-yb-zav">
@@ -266,20 +267,20 @@
             </objects>
             <point key="canvasLocation" x="-1958.0152671755725" y="-706.33802816901414"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Articles Page View Controller-->
         <scene sceneID="vWB-A6-0Eg">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Sww-9h-ivD" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Sww-9h-ivD" customClass="ArticlesPageViewController" customModule="Kcal" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcF-gS-vbk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1385" y="-1430"/>
+            <point key="canvasLocation" x="-200" y="-1175"/>
         </scene>
         <!--Home Page Controller-->
         <scene sceneID="U3L-4V-PjD">
             <objects>
                 <viewController id="2yh-rY-V7y" customClass="HomePageController" customModule="Kcal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZPW-Z5-teW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello Dana Sami," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXN-I4-j5Z">
@@ -297,10 +298,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qc9-t6-els">
-                                <rect key="frame" x="46" y="129" width="320" height="160"/>
+                                <rect key="frame" x="46" y="119" width="320" height="160"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="PYB-RC-1IA" kind="embed" id="bn8-If-kkf"/>
+                                    <segue destination="Sww-9h-ivD" kind="embed" id="icZ-XE-yDR"/>
                                 </connections>
                             </containerView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="0Wc-Gy-7vb">
@@ -379,13 +380,14 @@
                         <viewLayoutGuide key="safeArea" id="xHT-yI-ub5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QxO-ey-T4s"/>
                     <connections>
                         <outlet property="FavorCollection" destination="N4x-SP-PRz" id="4Uf-3L-AOt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y2W-aT-OnN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-650" y="-1430"/>
+            <point key="canvasLocation" x="-902" y="-1089"/>
         </scene>
         <!--Page Item View Controller-->
         <scene sceneID="uak-Bk-mjm">
@@ -585,23 +587,9 @@
             </objects>
             <point key="canvasLocation" x="-853" y="-326"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="pLK-Jv-zxb">
-            <objects>
-                <viewController id="PYB-RC-1IA" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="383-Xr-UFY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Kc-YK-82j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="64" y="-1311"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MYR-An-w1O"/>
+        <segue reference="KTy-61-csS"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="LightGreen"/>
     <resources>
