@@ -30,4 +30,11 @@ class CustomCollectionViewCell: UICollectionViewCell {
         label.textColor = UIColor(named: square.FontColor) ?? .black
           
         }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.contentView.layer.cornerRadius = 32
+        self.contentView.layer.masksToBounds = true
+    }
+
 }

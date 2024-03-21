@@ -27,7 +27,7 @@ class ArticlesItemsController: UIViewController {
         imageView.image = UIImage(named: imageName ?? "")
         titleLabel.text = titleText
         view.backgroundColor = UIColor(named: backgroundColor ?? "")
-        actionButton.backgroundColor = UIColor(named: buttonColor ?? "")
+        // actionButton.backgroundColor = UIColor(named: buttonColor ?? "")
         view.layer.cornerRadius = 32
            view.clipsToBounds = true
     }

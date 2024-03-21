@@ -11,6 +11,7 @@ class HomePageController: UIViewController {
 
     @IBOutlet weak var FavorCollection: UICollectionView!
     
+    @IBOutlet weak var pageControler: UIPageControl!
     
     var mySquares: [Square] = [
         Square(image: "strawberry", label: "Fruits", backgroundColor: "LightPink",FontColor: "DeepRed"),
@@ -24,6 +25,8 @@ class HomePageController: UIViewController {
           FavorCollection.dataSource = self
           FavorCollection.reloadData()
     }
+    // MARK: - Page View
+
 
 
 }
@@ -44,5 +47,28 @@ extension HomePageController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
         }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let padding: CGFloat = 16 // Or whatever padding you want
+        let collectionViewSize = collectionView.frame.size.width - padding
+        let width = collectionViewSize / 2
+        return CGSize(width: width, height: width) // Creates a square cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let pageViewController = segue.destination as? ArticlesPageViewController {
+            pageViewController.articlesDelegate = self
+        }
+    }
+
+    
     
 }
+
+extension HomePageController: ArticlesPageViewControllerDelegate {
+    func didUpdatePageIndex(currentIndex: Int) {
+        pageControler.currentPage = currentIndex
+    }
+}
+
+// MARK: - Page View
+

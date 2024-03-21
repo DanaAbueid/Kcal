@@ -31,6 +31,6 @@ struct Articles {
     let image: String
     let label: String
     let backgroundColor: String
-    let ButtonColor: String
+   // let ButtonColor: String
 
 }

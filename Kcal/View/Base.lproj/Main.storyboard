@@ -200,8 +200,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="signUpPressed:" destination="NHy-vd-Zro" eventType="touchUpInside" id="9GZ-DF-q1j"/>
-                                            <segue destination="2yh-rY-V7y" kind="showDetail" id="s05-0w-Pt2"/>
+                                            <segue destination="2yh-rY-V7y" kind="show" id="yO9-WD-4b1"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="6aC-yb-zav">
@@ -280,114 +279,185 @@
             <objects>
                 <viewController id="2yh-rY-V7y" customClass="HomePageController" customModule="Kcal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZPW-Z5-teW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello Dana Sami," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXN-I4-j5Z">
-                                <rect key="frame" x="104" y="59" width="185" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="25"/>
-                                <color key="textColor" name="LightGreen"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find, track and eat healthy food." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfS-BP-Q8l">
-                                <rect key="frame" x="75" y="98" width="247" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qc9-t6-els">
-                                <rect key="frame" x="46" y="119" width="320" height="160"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="Sww-9h-ivD" kind="embed" id="icZ-XE-yDR"/>
-                                </connections>
-                            </containerView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="0Wc-Gy-7vb">
-                                <rect key="frame" x="148" y="291" width="116" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="pageIndicatorTintColor" name="LightPink"/>
-                                <color key="currentPageIndicatorTintColor" name="DarkPink"/>
-                            </pageControl>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PurpleRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="gay-mG-6WA">
-                                <rect key="frame" x="36" y="359" width="320" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track Your Weekly Progress" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDe-DH-d3H">
-                                <rect key="frame" x="64" y="380" width="133" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N4x-SP-PRz">
-                                <rect key="frame" x="86" y="617" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zki-P5-O0P" userLabel="PurpleView">
+                                <rect key="frame" x="36.666666666666657" y="382.66666666666669" width="320" height="86.666666666666686"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PurpleRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="gay-mG-6WA">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="86.666666666666671"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Your Weekly Progress" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDe-DH-d3H">
+                                        <rect key="frame" x="29" y="20.999999999999996" width="164" height="44.666666666666657"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="164" id="5jh-6Y-vdq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9n1-4Z-PGa">
+                                        <rect key="frame" x="201" y="28" width="104" height="30.666666666666671"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="View Now">
+                                            <fontDescription key="titleFontDescription" name="Signika-Light_Regular" family="Signika" pointSize="12"/>
+                                            <color key="baseForegroundColor" name="DarkPurple"/>
+                                            <color key="baseBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="p12-sN-FQc">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="21r-Ux-op0" customClass="CustomCollectionViewCell" customModule="Kcal" customModuleProvider="target">
-                                        <rect key="frame" x="56" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nVX-s0-aq1" customClass="CustomCollectionViewCell" customModule="Kcal" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="strawberry" translatesAutoresizingMaskIntoConstraints="NO" id="D7o-XR-bHH">
-                                                    <rect key="frame" x="24" y="8" width="80" height="80"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fruits" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM3-cv-Y1S">
-                                                    <rect key="frame" x="43" y="90" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="17"/>
-                                                    <color key="textColor" red="0.30196078431372547" green="0.039215686274509803" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </collectionViewCellContentView>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9n1-4Z-PGa" secondAttribute="trailing" constant="15" id="53k-cE-xhp"/>
+                                    <constraint firstAttribute="trailing" secondItem="gay-mG-6WA" secondAttribute="trailing" id="AHE-or-azz"/>
+                                    <constraint firstItem="gay-mG-6WA" firstAttribute="leading" secondItem="zki-P5-O0P" secondAttribute="leading" id="B8w-Ie-oSl"/>
+                                    <constraint firstItem="fDe-DH-d3H" firstAttribute="leading" secondItem="zki-P5-O0P" secondAttribute="leading" constant="29" id="H2z-wR-pkN"/>
+                                    <constraint firstItem="9n1-4Z-PGa" firstAttribute="centerY" secondItem="gay-mG-6WA" secondAttribute="centerY" id="Kqf-D2-onb"/>
+                                    <constraint firstItem="fDe-DH-d3H" firstAttribute="top" secondItem="zki-P5-O0P" secondAttribute="top" constant="21" id="Lyg-zF-8NZ"/>
+                                    <constraint firstItem="9n1-4Z-PGa" firstAttribute="centerY" secondItem="fDe-DH-d3H" secondAttribute="centerY" id="QHr-B0-3hv"/>
+                                    <constraint firstItem="9n1-4Z-PGa" firstAttribute="leading" secondItem="fDe-DH-d3H" secondAttribute="trailing" constant="8" id="T2b-W1-gQA"/>
+                                    <constraint firstItem="9n1-4Z-PGa" firstAttribute="top" secondItem="zki-P5-O0P" secondAttribute="top" constant="28" id="cY9-lB-IAk"/>
+                                    <constraint firstAttribute="bottom" secondItem="gay-mG-6WA" secondAttribute="bottom" id="d38-FA-0QL"/>
+                                    <constraint firstItem="gay-mG-6WA" firstAttribute="top" secondItem="zki-P5-O0P" secondAttribute="top" id="vbE-Ee-Bdz"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Mwv-ec-lEK">
+                                <rect key="frame" x="0.0" y="103" width="393" height="259.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Dana Sami," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXN-I4-j5Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="6.666666666666667"/>
+                                        <fontDescription key="fontDescription" name="Signika-Light_SemiBold" family="Signika" pointSize="25"/>
+                                        <color key="textColor" name="LightGreen"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find, track and eat healthy food." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfS-BP-Q8l">
+                                        <rect key="frame" x="0.0" y="21.666666666666671" width="393" height="22.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qc9-t6-els">
+                                        <rect key="frame" x="25" y="59" width="343" height="160"/>
                                         <connections>
-                                            <outlet property="imageView" destination="D7o-XR-bHH" id="r84-NA-ebK"/>
-                                            <outlet property="label" destination="zM3-cv-Y1S" id="kke-Go-P4t"/>
+                                            <segue destination="Sww-9h-ivD" kind="embed" id="icZ-XE-yDR"/>
                                         </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Favorites" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7h-r7-e4b">
-                                <rect key="frame" x="94" y="541" width="205" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9n1-4Z-PGa">
-                                <rect key="frame" x="240" y="384" width="98" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="View Now">
-                                    <fontDescription key="titleFontDescription" name="Signika-Light_Regular" family="Signika" pointSize="12"/>
-                                    <color key="baseForegroundColor" name="DarkPurple"/>
-                                </buttonConfiguration>
-                            </button>
+                                    </containerView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="0Wc-Gy-7vb">
+                                        <rect key="frame" x="0.0" y="234" width="393" height="25.666666666666686"/>
+                                        <color key="pageIndicatorTintColor" name="LightPink"/>
+                                        <color key="currentPageIndicatorTintColor" name="DarkPink"/>
+                                    </pageControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KfS-BP-Q8l" firstAttribute="top" secondItem="JXN-I4-j5Z" secondAttribute="bottom" constant="15" id="12m-tO-3s9"/>
+                                    <constraint firstItem="0Wc-Gy-7vb" firstAttribute="leading" secondItem="Mwv-ec-lEK" secondAttribute="leading" id="3vt-pm-6Lf"/>
+                                    <constraint firstAttribute="bottom" secondItem="0Wc-Gy-7vb" secondAttribute="bottom" id="DC9-mg-dAP"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Wc-Gy-7vb" secondAttribute="trailing" id="GyL-6U-s4m"/>
+                                    <constraint firstAttribute="trailing" secondItem="qc9-t6-els" secondAttribute="trailing" constant="25" id="Jxh-ET-6e1"/>
+                                    <constraint firstAttribute="trailing" secondItem="JXN-I4-j5Z" secondAttribute="trailing" id="YDF-YQ-4Wt"/>
+                                    <constraint firstItem="JXN-I4-j5Z" firstAttribute="leading" secondItem="Mwv-ec-lEK" secondAttribute="leading" id="f67-MP-LZ7"/>
+                                    <constraint firstItem="KfS-BP-Q8l" firstAttribute="top" secondItem="JXN-I4-j5Z" secondAttribute="bottom" constant="15" id="g6B-fG-bOn"/>
+                                    <constraint firstItem="0Wc-Gy-7vb" firstAttribute="top" secondItem="qc9-t6-els" secondAttribute="bottom" constant="15" id="hUz-tK-3nc"/>
+                                    <constraint firstAttribute="trailing" secondItem="KfS-BP-Q8l" secondAttribute="trailing" id="jQX-Oj-kTr"/>
+                                    <constraint firstItem="KfS-BP-Q8l" firstAttribute="leading" secondItem="Mwv-ec-lEK" secondAttribute="leading" id="jtu-OV-QyI"/>
+                                    <constraint firstItem="qc9-t6-els" firstAttribute="leading" secondItem="Mwv-ec-lEK" secondAttribute="leading" constant="25" id="nEV-V8-aas"/>
+                                    <constraint firstItem="JXN-I4-j5Z" firstAttribute="top" secondItem="Mwv-ec-lEK" secondAttribute="top" id="qWN-WL-cSn"/>
+                                    <constraint firstAttribute="bottom" secondItem="0Wc-Gy-7vb" secondAttribute="bottom" id="slQ-wA-BNE"/>
+                                    <constraint firstItem="qc9-t6-els" firstAttribute="top" secondItem="KfS-BP-Q8l" secondAttribute="bottom" constant="15" id="uJD-St-gPd"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="LS8-6x-Mbi">
+                                <rect key="frame" x="15" y="540.33333333333337" width="363" height="277.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Favorites" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7h-r7-e4b">
+                                        <rect key="frame" x="0.0" y="0.0" width="363" height="27.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N4x-SP-PRz">
+                                        <rect key="frame" x="0.0" y="75.333333333333272" width="363" height="202.33333333333337"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="p12-sN-FQc">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="21r-Ux-op0" customClass="CustomCollectionViewCell" customModule="Kcal" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="31.333333333333332" width="128" height="140"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nVX-s0-aq1" customClass="CustomCollectionViewCell" customModule="Kcal" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="140"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM3-cv-Y1S">
+                                                            <rect key="frame" x="43" y="86" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="17"/>
+                                                            <color key="textColor" red="0.30196078431372547" green="0.039215686274509803" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="strawberry" translatesAutoresizingMaskIntoConstraints="NO" id="D7o-XR-bHH">
+                                                            <rect key="frame" x="43" y="20" width="42" height="64"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="zM3-cv-Y1S" firstAttribute="top" secondItem="D7o-XR-bHH" secondAttribute="bottom" constant="2" id="0xh-xC-V9d"/>
+                                                        <constraint firstItem="zM3-cv-Y1S" firstAttribute="top" secondItem="D7o-XR-bHH" secondAttribute="bottom" constant="2" id="99l-q5-Iuw"/>
+                                                        <constraint firstAttribute="trailing" secondItem="zM3-cv-Y1S" secondAttribute="trailing" constant="43" id="X6n-x4-nWM"/>
+                                                        <constraint firstItem="D7o-XR-bHH" firstAttribute="top" secondItem="nVX-s0-aq1" secondAttribute="top" constant="20" id="ZeY-hJ-bEb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="zM3-cv-Y1S" secondAttribute="bottom" constant="33" id="cuQ-SV-IGE"/>
+                                                        <constraint firstItem="zM3-cv-Y1S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nVX-s0-aq1" secondAttribute="leading" constant="20" symbolic="YES" id="glo-ar-I02"/>
+                                                        <constraint firstAttribute="trailing" secondItem="D7o-XR-bHH" secondAttribute="trailing" constant="43" id="kVr-CC-pXf"/>
+                                                        <constraint firstItem="D7o-XR-bHH" firstAttribute="leading" secondItem="nVX-s0-aq1" secondAttribute="leading" constant="43" id="qOV-Tr-faa"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <connections>
+                                                    <outlet property="imageView" destination="D7o-XR-bHH" id="r84-NA-ebK"/>
+                                                    <outlet property="label" destination="zM3-cv-Y1S" id="kke-Go-P4t"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="N4x-SP-PRz" firstAttribute="leading" secondItem="LS8-6x-Mbi" secondAttribute="leading" id="0B1-x1-ulZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="N4x-SP-PRz" secondAttribute="bottom" id="3PY-yV-ibO"/>
+                                    <constraint firstAttribute="trailing" secondItem="J7h-r7-e4b" secondAttribute="trailing" id="8d1-cr-xwU"/>
+                                    <constraint firstAttribute="trailing" secondItem="N4x-SP-PRz" secondAttribute="trailing" id="RJt-Mu-0dN"/>
+                                    <constraint firstItem="J7h-r7-e4b" firstAttribute="leading" secondItem="LS8-6x-Mbi" secondAttribute="leading" id="fhY-yy-UuH"/>
+                                    <constraint firstItem="J7h-r7-e4b" firstAttribute="top" secondItem="LS8-6x-Mbi" secondAttribute="top" id="j8M-YQ-TG0"/>
+                                    <constraint firstItem="N4x-SP-PRz" firstAttribute="top" secondItem="J7h-r7-e4b" secondAttribute="bottom" constant="48" id="ljq-Xv-0ml"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xHT-yI-ub5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zki-P5-O0P" firstAttribute="centerY" secondItem="ZPW-Z5-teW" secondAttribute="centerY" id="6qo-BV-9vd"/>
+                            <constraint firstItem="xHT-yI-ub5" firstAttribute="bottom" secondItem="LS8-6x-Mbi" secondAttribute="bottom" id="9kd-vk-tv2"/>
+                            <constraint firstItem="xHT-yI-ub5" firstAttribute="trailing" secondItem="Mwv-ec-lEK" secondAttribute="trailing" id="E98-zc-VfJ"/>
+                            <constraint firstItem="LS8-6x-Mbi" firstAttribute="top" secondItem="zki-P5-O0P" secondAttribute="bottom" constant="71" id="Ges-kR-vnQ"/>
+                            <constraint firstItem="zki-P5-O0P" firstAttribute="top" secondItem="Mwv-ec-lEK" secondAttribute="bottom" constant="20" id="KIJ-fk-2H4"/>
+                            <constraint firstItem="zki-P5-O0P" firstAttribute="centerX" secondItem="ZPW-Z5-teW" secondAttribute="centerX" id="XYL-pD-TXA"/>
+                            <constraint firstItem="xHT-yI-ub5" firstAttribute="trailing" secondItem="LS8-6x-Mbi" secondAttribute="trailing" constant="15" id="YNf-xq-NQv"/>
+                            <constraint firstItem="LS8-6x-Mbi" firstAttribute="leading" secondItem="xHT-yI-ub5" secondAttribute="leading" constant="15" id="apN-lg-W7d"/>
+                            <constraint firstItem="Mwv-ec-lEK" firstAttribute="top" secondItem="xHT-yI-ub5" secondAttribute="top" id="pRo-fb-c8O"/>
+                            <constraint firstItem="Mwv-ec-lEK" firstAttribute="leading" secondItem="xHT-yI-ub5" secondAttribute="leading" id="rJN-Hx-9R2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QxO-ey-T4s"/>
                     <connections>
                         <outlet property="FavorCollection" destination="N4x-SP-PRz" id="4Uf-3L-AOt"/>
+                        <outlet property="pageControler" destination="0Wc-Gy-7vb" id="uul-FW-1lb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y2W-aT-OnN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-902" y="-1089"/>
+            <point key="canvasLocation" x="-903.05343511450383" y="-1089.4366197183099"/>
         </scene>
         <!--Page Item View Controller-->
         <scene sceneID="uak-Bk-mjm">

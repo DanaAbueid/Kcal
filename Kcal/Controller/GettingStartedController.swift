@@ -37,3 +37,4 @@ class GettingStartedController: UIViewController, CustomPageViewControllerDelega
     }
 
 }
+

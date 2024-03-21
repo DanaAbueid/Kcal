@@ -31,7 +31,7 @@ class SignUpController: UIViewController {
     }
     
     @IBAction func signUpPressed(_ sender: Any) {
-        performSegue(withIdentifier: "GoToWelcome", sender: self)
+       // performSegue(withIdentifier: "GoToWelcome", sender: self)
     }
     /*
     // MARK: - Navigation
