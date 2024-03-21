@@ -372,13 +372,13 @@
                                 <rect key="frame" x="15" y="540.33333333333337" width="363" height="277.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Favorites" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7h-r7-e4b">
-                                        <rect key="frame" x="0.0" y="0.0" width="363" height="27.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="363" height="26.333333333333332"/>
                                         <fontDescription key="fontDescription" name="Signika-Light_Regular" family="Signika" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N4x-SP-PRz">
-                                        <rect key="frame" x="0.0" y="75.333333333333272" width="363" height="202.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="74.333333333333272" width="363" height="203.33333333333337"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="p12-sN-FQc">
                                             <size key="itemSize" width="128" height="128"/>
@@ -388,7 +388,7 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="21r-Ux-op0" customClass="CustomCollectionViewCell" customModule="Kcal" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="31.333333333333332" width="128" height="140"/>
+                                                <rect key="frame" x="0.0" y="31.666666666666668" width="128" height="140"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nVX-s0-aq1" customClass="CustomCollectionViewCell" customModule="Kcal" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="140"/>
