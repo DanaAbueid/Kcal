@@ -10,6 +10,7 @@ import UIKit
 class CustomCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var InnerView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,24 +18,25 @@ class CustomCollectionViewCell: UICollectionViewCell {
     }
     
     func setupUI() {
-        
-        self.contentView.layer.cornerRadius = 32
-        self.contentView.layer.masksToBounds = true
+         //   self.contentView.layer.cornerRadius = 32
+  //   self.contentView.layer.masksToBounds = true
         
     }
     
     func configure(with square: Square) {
             imageView.image = UIImage(named: square.image)
             label.text = square.label
-            contentView.backgroundColor = UIColor(named: square.backgroundColor) ?? .gray
+        InnerView.backgroundColor = UIColor(named: square.backgroundColor) ?? .gray
         label.textColor = UIColor(named: square.FontColor) ?? .black
+        InnerView.layer.cornerRadius = 32
+        InnerView.layer.masksToBounds = true
           
         }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        self.contentView.layer.cornerRadius = 32
-        self.contentView.layer.masksToBounds = true
-    }
+ //   override func layoutSubviews() {
+   //     super.layoutSubviews()
+     //   self.contentView.layer.cornerRadius = 32
+       // self.contentView.layer.masksToBounds = true
+   // }
 
 }
